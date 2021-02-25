@@ -9,7 +9,8 @@ trigger:
 resources:
   containers:
   - container: terraform
-    image: ubuntu:latest
+    image: hashicorp/terraform:latest
+    options: --version
 
 variables:
 - group: aws-terraform-secrets
@@ -24,5 +25,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo "This works!"
+- script: echo "Here's the script starting"
   target: terraform

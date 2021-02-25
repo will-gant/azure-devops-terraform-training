@@ -10,7 +10,7 @@ resources:
   containers:
   - container: terraform
     image: hashicorp/terraform:latest
-    options: --version
+    options: --entrypoint bash
 
 variables:
 - group: aws-terraform-secrets

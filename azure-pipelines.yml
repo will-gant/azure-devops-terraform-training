@@ -8,9 +8,8 @@ trigger:
 
 resources:
   containers:
-  - container: terraform
-    image: hashicorp/terraform:latest
-    options: --entrypoint sh
+  - container: pcf-ops
+    image: engineerbetter/pcf-ops:latest
 
 variables:
 - group: aws-terraform-secrets
@@ -25,5 +24,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo "Here's the script starting"
-  target: terraform
+- script: terraform -v
+  target: pcf-ops

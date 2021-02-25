@@ -1,3 +1,3 @@
 variable "state_bucket" {}
-variable "access_key" {}
+variable "state_file_path" {}
 variable "region" {}

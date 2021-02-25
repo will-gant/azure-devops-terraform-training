@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = var.state_bucket
-    key    = var.access_key
+    key    = var.state_file_path
     region = var.region
   }
 }

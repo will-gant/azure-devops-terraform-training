@@ -28,7 +28,7 @@ steps:
   env:
     AWS_ACCESS_KEY_ID: $(aws-access-key-id)
     AWS_SECRET_ACCESS_KEY: $(aws-secret-access-key)
-    TF_VAR_state_bucket: $(state_bucket)
-    TF_VAR_state_file_path: $(state_file_path)
+    STATE_BUCKET: $(state_bucket)
+    STATE_FILE_PATH: $(state_file_path)
     TF_VAR_region: $(region)
   target: pcf-ops

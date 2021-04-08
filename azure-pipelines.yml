@@ -14,7 +14,7 @@ resources:
 variables:
 - group: aws-terraform-secrets
 - name: region
-  value: eu-west-3
+  value: eu-west-2
 - name: state_file_path
   value: terraform.tfstate
 - name: state_bucket
